@@ -1,0 +1,9 @@
+---
+- name: useradd module
+  hosts: localhost
+  tasks:
+  - name:
+    ansible.builtin.user:
+      name: testuser
+      uid: 2006
+       
