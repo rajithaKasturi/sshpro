@@ -1,0 +1,13 @@
+---      
+- name: copy files
+  hosts: localhost
+  vars:
+    myfile: "/home/pd/file1.txt"
+  tasks:
+    - name: create a simple text file
+      ansible.builtin.copy:
+          dest: "{{myfile}}"
+          content: |
+             helloo
+             i did it     
+              

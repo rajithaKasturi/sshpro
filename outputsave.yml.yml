@@ -1,0 +1,6 @@
+---
+- name: save the content in outputfile
+  hosts: localhost
+  tasks:
+  - name:
+    local_action: shell echo " this output text" >> /tmp/output.txt    
