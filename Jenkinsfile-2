@@ -1,0 +1,12 @@
+pipeline {
+  agent any
+  stages {
+    stage('Hello') {
+      steps {
+        sh 'ansible-playbook text.yml --syntax-check'
+        sh 'ansible-playbook text.yml'
+      }
+    }
+ }
+  
+}
