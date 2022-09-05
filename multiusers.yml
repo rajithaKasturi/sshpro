@@ -1,0 +1,11 @@
+---
+- name:
+  hosts: localhost
+  tasks:
+    - name:
+      user:
+        name: "{{item}}"
+        state: present
+      loop:
+        - user1
+        - user2
